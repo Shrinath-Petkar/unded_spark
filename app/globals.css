@@ -25,9 +25,9 @@ body {
     )
     rgb(var(--background-start-rgb));
     font-family: 'italiana';
-  src: url('/fonts/Italiana/Italiana_Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+    src: url('/fonts/Cormorant_Garamond/CormorantGaramond-light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 @layer utilities {
