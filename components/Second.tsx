@@ -1,8 +1,8 @@
 import React from "react";
 
-const Hero = () => {
+const Second = () => {
   return (
-    <div style={{ backgroundColor: '#000000' }} className='pl-20 pt-40 text-left'>
+    <div style={{ backgroundColor: '#000000' }} className='pl-20 pt-20 text-left'>
       <span style={{ color: '#fff', fontSize: '18px', fontStyle: 'normal', fontWeight: 400, letterSpacing: '10.8px', lineHeight: 'normal' }}>
       Accusamus Et Iust
       </span>
@@ -20,7 +20,7 @@ const Hero = () => {
   );
 }
 
-export default Hero;
+export default Second;
 
 
 
