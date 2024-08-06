@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
       </div>
       <div>
-        <div>
+        <div className="z-1">
           <Image
             src="/images/section1.jpg"
             width={300}
@@ -30,7 +30,7 @@ const Hero = () => {
             alt="section1"
           />
         </div>
-        <div className="absolute ">
+        <div className="-mt-32 z-0">
         <Image
           src="/images/flower.png"
           width={200}

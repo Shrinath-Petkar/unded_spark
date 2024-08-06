@@ -11,10 +11,12 @@ import Images from "@/components/Images";
 import Video from "@/components/Video";
 import Awards from "@/components/Awards";
 import Blog from "@/components/Blog";
+import Hero2 from "@/components/Hero2";
 
 export default function Home() {
   return (
     <>
+      <Hero2/>
       <Hero />
       <Second/>
       <Service />

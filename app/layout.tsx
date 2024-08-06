@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Navbar2 from "@/components/Navbar2";
 // import Hero from "@/components/Hero";
 // import Second from "@/components/Second";
 
@@ -22,7 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body  className="font-italiana">
-        <Navbar />
+        <Navbar2 />
+        <Navbar/>
         <main className="relative overflow-hidden">{children}</main>
         <Footer />
       </body>
