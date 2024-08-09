@@ -1,26 +1,64 @@
-import Image from "next/image"
-import Link from "next/link"
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
 
 const Hover = () => {
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [hovered, setHovered] = useState(null);
+
+  const handleMouseMove = (e, container) => {
+    const rect = container.getBoundingClientRect();
+    const x = e.clientX - rect.left; 
+    const y = e.clientY - rect.top; 
+    setMousePos({ x, y });
+  };
+
+  const handleMouseEnter = (e, index) => {
+    setHovered(index);
+    handleMouseMove(e, e.currentTarget); 
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(null);
+  };
+
+  const images = [
+    { src: "/creative.png", alt: "Creative Innovation" },
+    { src: "/Daisy.png", alt: "Design Figure" },
+    { src: "/Robot.png", alt: "Art Design" },
+    { src: "/Molecule.png", alt: "Artistic Portrait" },
+  ];
+
   return (
     <nav className="bg-black">
-      
-        
-      <div>
-        <p className="text-center text-7xl mt-24 hover:text-orange-500">Creative Innovation</p>
-        <br />
-        <p className="text-center text-7xl mt-8  hover:text-orange-500">Design Figure</p>
-        <br />
-        <p className="text-center text-7xl mt-8  hover:text-orange-500">Art Design</p>
-        <br />
-        <p className="text-center text-7xl mt-8  hover:text-orange-500">Artistic Protrait</p>
-        <br />
+      <div className="flex flex-col items-center mt-24 space-y-40 "> {/* Flex column for vertical stacking */}
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className="relative text-center"
+            onMouseMove={(e) => handleMouseMove(e, e.currentTarget)}
+            onMouseEnter={(e) => handleMouseEnter(e, index)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <p className="text-7xl hover:text-orange-500">{image.alt}</p>
+            {hovered === index && (
+              <Image
+                src={image.src}
+                alt={image.alt}
+                className="absolute image-center transition-transform duration-50"
+                style={{
+                  transform: `translate(${mousePos.x * 0.1}px, ${mousePos.y * 0.1}px)`,
+                }}
+                width={200}
+                height={200}
+              />
+            )}
+          </div>
+        ))}
       </div>
+    </nav>
+  );
+};
 
-         
-        
-      </nav>
-  )
-}
-
-export default Hover
+export default Hover;

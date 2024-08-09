@@ -10,6 +10,27 @@ const Awards = () => {
       width={600}
       height={600}
     />
+    {/* const data =[
+    { 
+     title:'awwards AWARD',
+     date:'June 2023',
+    },
+
+    { 
+     title:'Campaign AWARD',
+     date:'June 2013',
+    },
+    { 
+     title:'Animation AWARD',
+     date:'June 2023',
+    },
+    { 
+     title:'Peach Of the day',
+     date:'June 2023',
+    },
+
+
+    ] */}
     </div>
   )
 }
