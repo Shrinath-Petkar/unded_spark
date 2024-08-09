@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import { FaAsterisk } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -13,10 +15,17 @@ const Hero = () => {
           <br />
           Our Solutions
         </h2>
-        <p className="text-white flex text-xl font-normal tracking-[2px] leading-7 max-w-[615px]">
-          We are helping clients create WordPress websites with our talented
-          experts. Quam nulla porttitor massa id neque. Est placerat in egestas.
-        </p>
+        <div className="flex">
+          <div className="pt-1 mr-3 text-2xl">
+            <FaAsterisk className="animate-spin-slow" />
+          </div>
+          <p className="text-white flex text-xl font-normal tracking-[2px] leading-7 max-w-[615px]">
+            We are helping clients create WordPress websites with our talented
+            experts. Quam nulla porttitor massa id neque. Est placerat in
+            egestas.
+          </p>
+        </div>
+
         <div>
           <button className="mt-[70px]">Read case study</button>
         </div>
@@ -31,13 +40,13 @@ const Hero = () => {
           />
         </div>
         <div className="-mt-32 z-0">
-        <Image
-          src="/images/flower.png"
-          width={200}
-          height={200}
-          alt="section1"
-        />
-        </div> 
+          <Image
+            src="/images/flower.png"
+            width={200}
+            height={200}
+            alt="section1"
+          />
+        </div>
       </div>
     </div>
   );
