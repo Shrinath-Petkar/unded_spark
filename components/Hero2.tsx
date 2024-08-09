@@ -14,7 +14,7 @@ const Hero2 = () => {
             height={200}
             alt="flower"
           />
-          <span className="-pr-4">Crea</span>tive
+          <span className="">Crea</span>tive
           <br />
         </div>
         Designer
@@ -23,10 +23,10 @@ const Hero2 = () => {
           width={300}
           height={300}
           alt="creative"
-          className="absolute top-0 right-72 "
+          className="absolute top-12 right-80 "
         />
       </div>
-      <div className="w-[200px] h-[200px] rounded-full bg-blue-500 absolute top-[400px] right-64 ">
+      <div className="w-[200px] h-[200px] rounded-full bg-blue-500 absolute top-[500px] right-64 ">
         <div className="relative mt-10 ml-16"> 
           <Image
             src="/images/circle.png"
