@@ -4,7 +4,7 @@ import Image from "next/image";
 const Video2 = () => {
   return (
     <div className=" bg-white text-black">
-      <div className="relative flex items-center justify-center pt-32">
+      <div className="relative flex items-center justify-center pt-12 lg:pt-32">
         <Image
           src="/images/video.png"
           alt="Image with play button"
@@ -15,8 +15,8 @@ const Video2 = () => {
           <Image src="/images/play.png" width={150} height={150} alt="play" />
         </button>
       </div>
-      <div className="flex justify-center -mt-24">
-        <h1 className="text-[200px]">VIEW VIDEO</h1>
+      <div className="flex justify-center -mt-5 lg:-mt-24">
+        <h1 className="lg:text-[200px] text-[50px]">VIEW VIDEO</h1>
       </div>    
     </div>
   );

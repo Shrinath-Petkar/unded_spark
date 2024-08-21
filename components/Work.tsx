@@ -29,40 +29,43 @@ export const info = [
 ];
 const Work = () => {
   return (
-    <div className="bg-white text-black py-32">
+    <div className="bg-white text-black lg:py-32 px-3 lg:px-0 py-20">
       <div>
         <div className=" flex-cols  ">
-          <p className="flex justify-center tracking-[9px] text-xl">
+          <p className="flex justify-center tracking-[5px] lg:tracking-[9px] lg:text-xl">
             Recent Work
           </p>
-          <h1 className="flex justify-center text-8xl text-center tracking-wide">
+          <h1 className="flex justify-center lg:text-8xl text-5xl text-center lg:tracking-wide">
             We are fully dedicated to creating authentic digital solutions.
           </h1>
         </div>
       </div>
-      <div className="py-28">
+      <div className="lg:py-28 py-12">
         {info.map((i, index) => (
           <div
-            className={`flex justify-around ${
+            className={`flex py-10 lg:py-0 lg:justify-around ${
               i.id % 2 === 0 && "flex-row-reverse"
-            }    items-center max-md:flex-wrap  `}
+            }    lg:items-center max-md:flex-wrap  `}
             key={index}
           >
             <div className="">
               <Image src={i.image} width={620} height={620} alt="image" />
             </div>
-            <div className="w-[30%] flex-col flex justify-center items-start">
-              <p className="bg-black py-3 px-5 mt-8 text-white font-medium rounded-2xl my-4">
+            <div className="lg:w-[30%] flex-col flex lg:justify-center lg:items-start">
+              <p className="bg-black py-3 text-center lg:px-5 mt-8 text-white font-medium rounded-2xl lg:my-4">
                 {i.date}
               </p>
               <Link href={i.link}>
-                <h1 className="text-4xl hover:text-[red]">{i.title}</h1>
+                <h1 className="lg:text-4xl text-3xl font-bold tracking-[2xl] hover:text-[red] text-center">{i.title}</h1>
               </Link>
 
-              <p className="text-xl py-5 tracking-widest">{i.desc}</p>
-              <u><Link href="/" className="text-2xl hover:text-[red]">
+              <p className="text-xl py-5 tracking-[1px] lg:tracking-widest lg:text-left text-center">{i.desc}</p>
+              <div className="flex justify-center">
+              <u><Link href="/" className="text-2xl  hover:text-[red]">
                 Read more
               </Link></u>
+              </div>
+             
             </div>
           </div>
         ))}

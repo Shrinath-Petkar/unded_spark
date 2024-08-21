@@ -20,13 +20,13 @@ export const images = [
 
 const Images = () => {
   return (
-    <div className="flex px-16 py-32 bg-white text-black">
-      <div className="flex-col w-[60%] mr-12 flex items-start">
-        <p className="text-xl tracking-[4px]">Our team</p>
-        <h1 className="text-7xl tracking-wider">
+    <div className="lg:flex lg:px-16 py-32 bg-white text-black">
+      <div className="flex-col lg:w-[60%] mr-12 flex items-start">
+        <p className="lg:text-xl tracking-[4px] text-center">Our team</p>
+        <h1 className="lg:text-7xl text-5xl text-center font-semibold lg:tracking-wider">
           Join a team of creatives
         </h1>{" "}
-        <p className="text-xl py-5 tracking-widest">
+        <p className="lg:text-xl py-5 tracking-[2px] lg:tracking-widest">
           Proin efficitur, mauris vel condimentum pulvinar, velit orci
           consectetur ligula, eget egestas magna mi ut arcu. Phasellus nec odio
           orci. Nunc id massa ante. Suspendisse sit amet neque euismod,

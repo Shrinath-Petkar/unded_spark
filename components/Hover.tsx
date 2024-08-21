@@ -7,14 +7,14 @@ const Hover = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [hovered, setHovered] = useState(null);
 
-  const handleMouseMove = (e, container) => {
+  const handleMouseMove = (e:any, container:any) => {
     const rect = container.getBoundingClientRect();
     const x = e.clientX - rect.left; 
     const y = e.clientY - rect.top; 
     setMousePos({ x, y });
   };
 
-  const handleMouseEnter = (e, index) => {
+  const handleMouseEnter = (e:any, index:any) => {
     setHovered(index);
     handleMouseMove(e, e.currentTarget); 
   };
@@ -32,7 +32,7 @@ const Hover = () => {
 
   return (
     <nav className="bg-black">
-      <div className="flex flex-col items-center mt-24 space-y-40 "> {/* Flex column for vertical stacking */}
+      <div className="flex flex-col items-center pt-24 space-y-40 "> {/* Flex column for vertical stacking */}
         {images.map((image, index) => (
           <div
             key={index}
@@ -41,7 +41,7 @@ const Hover = () => {
             onMouseEnter={(e) => handleMouseEnter(e, index)}
             onMouseLeave={handleMouseLeave}
           >
-            <p className="text-7xl hover:text-orange-500">{image.alt}</p>
+            <p className="text-7xl text-white hover:text-orange-500">{image.alt}</p>
             {hovered === index && (
               <Image
                 src={image.src}

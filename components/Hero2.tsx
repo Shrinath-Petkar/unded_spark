@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const Hero2 = () => {
+const  Hero2 = () => {
   return (
     <div className="h-screen bg-white text-black p-12">
       <div className="text-[150px]  uppercase  ">

@@ -22,12 +22,12 @@ const Navbar2 = () => {
  
 
   return (
-    <div className="bg-white flex justify-around ">
+    <div className="bg-white flex lg:justify-around  ">
       <div className=" px-3 py-6 flex gap-12 ">
         <Link href="/" className="flex">
           <Image src="/images/logo.svg" alt="logo" width={200} height={200} />
         </Link>
-        <ul className="text-black flex text-2xl py-3">
+        <ul className="text-black lg:flex md:flex text-2xl py-3 hidden">
           {NAV_LINKS.map((link) => (
             <li key={link.key}>
               <Link
@@ -44,7 +44,7 @@ const Navbar2 = () => {
         </Link> */}
         {/* <div className={`container mx-auto ${isSearchOpen ? 'bg-blue-500' : 'bg-white'}`}> */}
         <div>
-      <button onClick={handleSearchClick} className="fixed top-4 text-2xl py-4 text-black">
+      <button onClick={handleSearchClick} className=" top-4 text-2xl py-4 text-black">
         Search
       </button>
       {/* {isSearchOpen && (

@@ -20,7 +20,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="ml-36 mt-24">
+    <div className="pl-36 pt-24 bg-black">
       <p className="text-2xl text-white">Blog Post</p>
       <br />
       <p className="text-7xl mt-1 text-white">My Latest Articles</p>

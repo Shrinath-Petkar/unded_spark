@@ -23,7 +23,7 @@ const Add = () => {
     },
   ];
   return (
-    <div className="bg-[#ff4a3b]">
+    <div className="bg-[#ff4a3b]" >
 
       <h2 className="text-[#ffff]">Over 32K+ software businesses growing with</h2>
 

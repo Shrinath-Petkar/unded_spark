@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Images = () => {
   return (
-    <div className="flex justify-around mt-28 px-16 space-x-8">
+    <div className="flex justify-around pt-28 px-16 space-x-8 bg-black">
       <div className="relative group w-[550px] h-[550px]">
         <Image
           src="/person11.png"

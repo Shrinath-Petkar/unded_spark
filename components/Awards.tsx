@@ -19,7 +19,7 @@ const Awards = () => {
     { 
      title:'Campaign AWARD',
      date:'June 2013',
-    },
+    },  
     { 
      title:'Animation AWARD',
      date:'June 2023',

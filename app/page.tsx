@@ -19,6 +19,8 @@ import Buisness from "@/components/Buisness";
 import Video2 from "@/components/Video2";
 import Team from "@/components/Team";
 import Newsletter from "@/components/Newsletter";
+import Blogs2 from "@/components/Blogs2";
+import Testimonial from "@/components/Testimonial";
 
 export default function Home() {
   return (
@@ -28,9 +30,14 @@ export default function Home() {
       <Creative_Marquee />
       <Work />
       <Buisness/>
+      <Testimonial/>
       <Video2/>
       <Team/>
       <Newsletter/>
+      <Blogs2/>
+
+
+{/*       
       <Hero />
       <Second/>
       <Service />
@@ -42,7 +49,7 @@ export default function Home() {
       <Images/>
       <Video/>
       <Awards/>
-      <Blog/>
+      <Blog/> */}
     
     </>
   );

@@ -5,8 +5,8 @@ function Newsletter() {
     <section className="bg-gray-100 py-16">
       <div className="container mx-auto text-center">
         <p className="  mb-4 tracking-[7px] text-black">News Letter</p>
-        <h1 className="text-black text-9xl mb-8">
-          Subscribe to our newsletter for updates
+        <h1 className="text-black text-8xl mb-8">
+          Subscribe To Our Newsletter For Updates
         </h1>
         <div className="flex flex-col items-center">
           <input

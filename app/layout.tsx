@@ -23,10 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body  className="font-italiana">
-        {/* <Navbar2 /> */}
-        <Navbar/>
+        <Navbar2 />
+        {/* <Navbar/> */}
         <main className="relative overflow-hidden">{children}</main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
