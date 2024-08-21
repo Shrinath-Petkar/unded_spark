@@ -1,19 +1,18 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
 const Card = () => {
+  const data = [
+    { 
+      imgurl: "/images/slideimg1.png" 
+    }
+  ];
+
   return (
-    <nav className="bg-pink-300">
-      
-        
-      <div>
-        <p className="text-black">Card Section</p>
-      </div>
+   <div className="bg-[#1F1F1F]">
+    card section
+   </div>
+  );
+};
 
-         
-        
-      </nav>
-  )
-}
-
-export default Card
+export default Card;

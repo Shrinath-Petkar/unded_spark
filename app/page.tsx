@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import Service from "@/components/Service";
 import Second from "@/components/Second"
-import Marquee from "@/components/Marquee";
 import Cards from "@/components/Cards";
 import Feedback from "@/components/Feedback";
 import Add from "@/components/Add";
@@ -41,8 +40,8 @@ export default function Home() {
       <Hero />
       <Second/>
       <Service />
-      <Marquee />
-      <Cards />
+      <Marqueesec />
+      {/* <Cards /> */}
       <Feedback/>
       <Add/>
       <Hover />

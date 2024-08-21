@@ -26,7 +26,7 @@ const Second = () => {
   ];
 
   return (
-    <div className="flex w-full h-full px-10 bg-gray-900 text-white">
+    <div className="flex w-full h-full px-10 bg-gray-900 text-white py-5">
       <div className="flex flex-col">
         <h1 className="text-lg uppercase tracking-wide custom-subheading mb-8 pt-12">
           Accusamus Et Iust

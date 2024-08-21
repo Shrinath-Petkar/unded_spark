@@ -16,7 +16,7 @@ const Hero = () => {
           Our Solutions
         </h2>
         <div className="flex">
-          <div className="pt-1 mr-3 text-2xl">
+          <div className="pt-1 mr-3 text-2xl text-white">
             <FaAsterisk className="animate-spin-slow" />
           </div>
           <p className="text-white flex text-xl font-normal tracking-[2px] leading-7 max-w-[615px]">
@@ -27,7 +27,7 @@ const Hero = () => {
         </div>
 
         <div>
-          <button className="mt-[70px]">Read case study</button>
+          <button className="mt-[70px] text-white">Read case study</button>
         </div>
       </div>
       <div>
